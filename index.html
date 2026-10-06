@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dabinkoa DJANAME — Portfolio d'architecture</title>
+<meta name="description" content="Portfolio de Dabinkoa DJANAME, élève architecte à l'École Nationale d'Architecture de Fès : équipement culturel, santé et habitat.">
+<meta property="og:title" content="Dabinkoa DJANAME — Portfolio d'architecture">
+<meta property="og:description" content="Équipement culturel, santé et habitat — projets d'atelier à l'ENA Fès.">
+<meta property="og:image" content="images/assilah-dome.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#accueil" class="logo">D<span class="dot c-blue"></span>D</a>
+  <nav class="nav" id="nav">
+    <a href="#projets">Projets</a>
+    <a href="#demarche">Démarche</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ ACCUEIL ============ -->
+  <section class="hero" id="accueil">
+    <div class="hero-text">
+      <p class="label">Élève architecte · ENA Fès, Maroc</p>
+      <h1 class="hero-name">Dabinkoa<br><span>DJANAME</span></h1>
+      <p class="hero-sub">Trois projets d'atelier, trois échelles&nbsp;: une fabrique culturelle à Assilah, un centre d'oncologie et un immeuble résidentiel à Fès.</p>
+      <a href="#projets" class="btn">Voir les projets <span aria-hidden="true">↓</span></a>
+    </div>
+
+    <!-- Les « billes » : une par projet -->
+    <div class="billes" aria-label="Accès direct aux projets">
+      <a href="#assilah" class="bille bille-1 c-blue" style="--d:0s">
+        <img src="images/assilah-dome.jpg" alt="Dôme vitré coloré des Bulles d'Assilah au coucher du soleil">
+        <span class="bille-tag">Assilah</span>
+      </a>
+      <a href="#oncologie" class="bille bille-2 c-rose" style="--d:.15s">
+        <img src="images/oncologie-vue.jpg" alt="Vue extérieure du centre d'oncologie de Fès">
+        <span class="bille-tag">Oncologie</span>
+      </a>
+      <a href="#immeuble" class="bille bille-3 c-green" style="--d:.3s">
+        <img src="images/immeuble-aerienne.jpg" alt="Vue aérienne de l'immeuble résidentiel à toiture végétalisée">
+        <span class="bille-tag">Habitat</span>
+      </a>
+      <span class="bille bille-dot c-sun" aria-hidden="true"></span>
+      <span class="bille bille-dot2 c-blue" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <!-- ============ DÉMARCHE ============ -->
+  <section class="demarche" id="demarche">
+    <div class="wrap demarche-grid">
+      <h2 class="section-title">Démarche</h2>
+      <div class="demarche-text">
+        <p class="lead">Ces projets ont été réalisés dans le cadre de l'atelier d'architecture à l'École Nationale d'Architecture de Fès. Ils associent analyse du contexte, recherche conceptuelle et maîtrise technique du projet.</p>
+        <p>Chacun aborde une typologie différente — équipement culturel, infrastructure de santé, habitat — en intégrant les enjeux bioclimatiques, paysagers et sociaux propres à son site au Maroc.</p>
+      </div>
+      <ul class="typos">
+        <li><span class="swatch c-blue"></span><strong>Équipement culturel</strong><span>Assilah</span></li>
+        <li><span class="swatch c-rose"></span><strong>Santé</strong><span>Fès — Agdal</span></li>
+        <li><span class="swatch c-green"></span><strong>Habitat collectif</strong><span>Fès</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="projets"></div>
+
+  <!-- ============ PROJET 1 — ASSILAH ============ -->
+  <section class="project c-blue" id="assilah">
+    <div class="wrap">
+      <header class="project-head">
+        <span class="project-no">1</span>
+        <div>
+          <p class="label">Équipement culturel · Assilah</p>
+          <h2 class="project-title">Les Bulles d'Assilah</h2>
+          <p class="project-kicker">Fabrique culturelle</p>
+        </div>
+      </header>
+
+      <figure class="cover">
+        <button class="zoom" data-src="images/assilah-dome.jpg" data-caption="Les Bulles d'Assilah — dôme vitré et bassins au coucher du soleil">
+          <img src="images/assilah-dome.jpg" alt="Dôme vitré coloré au coucher du soleil" loading="lazy">
+        </button>
+      </figure>
+
+      <div class="project-body">
+        <div class="col">
+          <h3>Site</h3>
+          <p>Assilah, ville connue pour son Festival culturel international, offre un site au fort potentiel bioclimatique, bien desservi et largement ouvert sur des espaces verts. La proximité de la N1 et d'une station-service expose le terrain à la surchauffe, à la pollution et à l'insécurité&nbsp;: une architecture passive doit y répondre. La mitoyenneté avec le cimetière Sidi Yacour impose une insertion paysagère respectueuse, calme et sereine.</p>
+        </div>
+        <div class="col">
+          <h3>Concept</h3>
+          <p>Deux images de départ&nbsp;: la <strong>goutte d'eau</strong>, pour la fluidité et le mouvement, et le <strong>jeu de billes</strong>, pour la dispersion ludique des éléments. Leur fusion donne un plateau traversé par un ruban paysager qui relie des volumes-pôles&nbsp;: ateliers, auditorium, théâtre de plein air, galerie immersive, restaurant, résidence — autour de bassins qui rafraîchissent le site.</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <button class="zoom g-wide" data-src="images/assilah-concept.jpg" data-caption="Évolution du concept — de l'inspiration au plan de masse"><img src="images/assilah-concept.jpg" alt="Planche d'évolution du concept" loading="lazy"></button>
+        <button class="zoom" data-src="images/assilah-bioclimatique.jpg" data-caption="Analyse bioclimatique du site"><img src="images/assilah-bioclimatique.jpg" alt="Schéma bioclimatique : vents et course du soleil" loading="lazy"></button>
+        <button class="zoom" data-src="images/assilah-masse.jpg" data-caption="Vue en plan masse"><img src="images/assilah-masse.jpg" alt="Vue aérienne du plan masse" loading="lazy"></button>
+        <button class="zoom" data-src="images/assilah-interieur.jpg" data-caption="Spectacle sous le dôme"><img src="images/assilah-interieur.jpg" alt="Intérieur du dôme pendant un spectacle" loading="lazy"></button>
+        <button class="zoom" data-src="images/assilah-bassin.jpg" data-caption="Ruban bâti et bassins"><img src="images/assilah-bassin.jpg" alt="Façade courbe le long des bassins" loading="lazy"></button>
+        <button class="zoom" data-src="images/assilah-entree.jpg" data-caption="Entrée principale"><img src="images/assilah-entree.jpg" alt="Entrée des Bulles d'Assilah" loading="lazy"></button>
+        <button class="zoom g-wide" data-src="images/assilah-toiture.jpg" data-caption="Toitures végétalisées et parvis"><img src="images/assilah-toiture.jpg" alt="Vue plongeante sur les toitures végétalisées" loading="lazy"></button>
+      </div>
+
+      <div class="planches">
+        <p class="label">Planches</p>
+        <div class="planche-row">
+          <button class="zoom planche" data-src="images/planche-assilah-plans.jpg" data-caption="Plans et coupes"><img src="images/planche-assilah-plans.jpg" alt="Planche des plans et coupes" loading="lazy"><span>Plans &amp; coupes</span></button>
+          <button class="zoom planche" data-src="images/planche-assilah-facades.jpg" data-caption="Façades"><img src="images/planche-assilah-facades.jpg" alt="Planche des façades" loading="lazy"><span>Façades</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJET 2 — ONCOLOGIE ============ -->
+  <section class="project c-rose" id="oncologie">
+    <div class="wrap">
+      <header class="project-head">
+        <span class="project-no">2</span>
+        <div>
+          <p class="label">Santé · Fès, quartier Agdal</p>
+          <h2 class="project-title">Centre d'oncologie</h2>
+          <p class="project-kicker">Jardin Lalla Amina</p>
+        </div>
+      </header>
+
+      <figure class="cover">
+        <button class="zoom" data-src="images/oncologie-vue.jpg" data-caption="Centre d'oncologie — vue extérieure">
+          <img src="images/oncologie-vue.jpg" alt="Vue extérieure du centre d'oncologie" loading="lazy">
+        </button>
+      </figure>
+
+      <div class="project-body">
+        <div class="col">
+          <h3>Site</h3>
+          <p>Le terrain jouxte le jardin Lalla Amina, au cœur du quartier Agdal&nbsp;: un emplacement stratégique, bien équipé, à la croisée sociale, culturelle et architecturale de la ville. L'analyse relève aussi un entretien irrégulier, de l'insécurité, une configuration spatiale peu lisible et des problèmes de stationnement.</p>
+          <ul class="actions">
+            <li>Répartir la végétation et valoriser les espèces existantes</li>
+            <li>Réorganiser le stationnement et élargir les voies</li>
+            <li>Créer des aires de jeux et un poste de sécurité dans le jardin</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Concept</h3>
+          <p>La <strong>propagation d'ondes positives</strong> et la <strong>mitose des cellules</strong>&nbsp;: le plan se développe en cercles concentriques à partir d'un noyau central. Les façades reprennent ce motif en perforations circulaires de tailles variées.</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <button class="zoom g-wide g-contain" data-src="images/oncologie-facade-1.jpg" data-caption="Façade aux perforations circulaires"><img src="images/oncologie-facade-1.jpg" alt="Façade courbe percée de cercles" loading="lazy"></button>
+        <button class="zoom" data-src="images/oncologie-masse.jpg" data-caption="Plan masse — insertion dans le jardin"><img src="images/oncologie-masse.jpg" alt="Plan masse dans le jardin Lalla Amina" loading="lazy"></button>
+        <button class="zoom" data-src="images/oncologie-interieurs.jpg" data-caption="Intérieurs — circulation, chambre, consultation"><img src="images/oncologie-interieurs.jpg" alt="Trois vues intérieures" loading="lazy"></button>
+        <button class="zoom g-wide g-contain" data-src="images/oncologie-facade-2.jpg" data-caption="Façade latérale"><img src="images/oncologie-facade-2.jpg" alt="Façade latérale avec végétation" loading="lazy"></button>
+      </div>
+
+      <div class="planches">
+        <p class="label">Planches</p>
+        <div class="planche-row">
+          <button class="zoom planche" data-src="images/planche-oncologie-analyse.jpg" data-caption="Analyse et concept"><img src="images/planche-oncologie-analyse.jpg" alt="Planche d'analyse et de concept" loading="lazy"><span>Analyse &amp; concept</span></button>
+          <button class="zoom planche" data-src="images/planche-oncologie-plans.jpg" data-caption="Plans et coupes"><img src="images/planche-oncologie-plans.jpg" alt="Planche des plans et coupes" loading="lazy"><span>Plans &amp; coupes</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJET 3 — IMMEUBLE ============ -->
+  <section class="project c-green" id="immeuble">
+    <div class="wrap">
+      <header class="project-head">
+        <span class="project-no">3</span>
+        <div>
+          <p class="label">Habitat collectif · Fès</p>
+          <h2 class="project-title">Immeuble résidentiel</h2>
+          <p class="project-kicker">Exposer, partager</p>
+        </div>
+      </header>
+
+      <figure class="cover">
+        <button class="zoom" data-src="images/immeuble-aerienne.jpg" data-caption="Immeuble résidentiel — vue aérienne et toiture végétalisée">
+          <img src="images/immeuble-aerienne.jpg" alt="Vue aérienne de l'immeuble à toiture végétalisée" loading="lazy">
+        </button>
+      </figure>
+
+      <div class="project-body">
+        <div class="col">
+          <h3>Site</h3>
+          <p>Une parcelle triangulaire en tête d'îlot, face à un rond-point&nbsp;: un point stratégique et très visible de Fès, entouré d'équipements, dans une zone en pleine restructuration qui ouvre une nouvelle vision de l'habitat. En contrepartie&nbsp;: congestion routière, accès direct au site difficile et contraintes administratives.</p>
+        </div>
+        <div class="col">
+          <h3>Projet</h3>
+          <p>Le plan triangulaire aux angles arrondis épouse la forme de la parcelle. Brise-soleil verticaux en bois, socle en pierre, toiture végétalisée et rez-de-chaussée largement vitré.</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <button class="zoom" data-src="images/immeuble-facade.jpg" data-caption="Façade principale"><img src="images/immeuble-facade.jpg" alt="Façade principale avec brise-soleil en bois" loading="lazy"></button>
+        <button class="zoom" data-src="images/immeuble-masse.jpg" data-caption="Plan de masse"><img src="images/immeuble-masse.jpg" alt="Plan de masse avec rond-point" loading="lazy"></button>
+        <button class="zoom g-wide g-contain" data-src="images/immeuble-facade-2.jpg" data-caption="Façade sur rue"><img src="images/immeuble-facade-2.jpg" alt="Façade sur rue" loading="lazy"></button>
+        <button class="zoom" data-src="images/immeuble-lobby.jpg" data-caption="Hall d'entrée"><img src="images/immeuble-lobby.jpg" alt="Hall d'entrée meublé" loading="lazy"></button>
+        <button class="zoom" data-src="images/immeuble-hall.jpg" data-caption="Espace commun en rez-de-chaussée"><img src="images/immeuble-hall.jpg" alt="Espace commun avec mur en pierre" loading="lazy"></button>
+      </div>
+
+      <div class="planches">
+        <p class="label">Planches</p>
+        <div class="planche-row three">
+          <button class="zoom planche" data-src="images/planche-immeuble-analyse.jpg" data-caption="Analyse du site et plan de masse"><img src="images/planche-immeuble-analyse.jpg" alt="Planche d'analyse du site" loading="lazy"><span>Analyse du site</span></button>
+          <button class="zoom planche" data-src="images/planche-immeuble-plans.jpg" data-caption="Plans — RDC, 1er et 4e étage"><img src="images/planche-immeuble-plans.jpg" alt="Planche des plans d'étage" loading="lazy"><span>Plans</span></button>
+          <button class="zoom planche" data-src="images/planche-immeuble-coupes.jpg" data-caption="Coupes AA, BB, CC, C1C1, C2C2"><img src="images/planche-immeuble-coupes.jpg" alt="Planche des coupes" loading="lazy"><span>Coupes</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Contact</h2>
+      <p class="lead">Disponible pour un stage ou un échange autour d'un projet.</p>
+      <div class="contact-links">
+        <a href="mailto:ton.email@exemple.com" class="contact-link"><span class="label">Email</span><span>ton.email@exemple.com</span></a>
+        <a href="https://www.linkedin.com/in/ton-profil" class="contact-link" target="_blank" rel="noopener"><span class="label">LinkedIn</span><span>linkedin.com/in/ton-profil</span></a>
+        <a href="portfolio.pdf" class="contact-link" target="_blank" rel="noopener"><span class="label">Portfolio PDF</span><span>Télécharger (26 Mo)</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 Dabinkoa DJANAME</span>
+  <span>ENA Fès</span>
+</footer>
+
+<!-- Visionneuse plein écran -->
+<dialog class="lightbox" id="lightbox" aria-label="Image agrandie">
+  <button class="lb-close" aria-label="Fermer">×</button>
+  <button class="lb-nav lb-prev" aria-label="Image précédente">←</button>
+  <figure>
+    <img id="lbImg" src="" alt="">
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" aria-label="Image suivante">→</button>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
